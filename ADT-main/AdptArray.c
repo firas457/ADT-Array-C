@@ -146,7 +146,11 @@ PElement GetAdptArrayAt(PAdptArray arr, int index) {
 
 //get the size of the addaptive array
 int GetAdptArraySize(PAdptArray arr) {
-
+    
+     if(arr==NULL){
+        return -1;
+    }
+    
     return arr->capicity;
 
 }
